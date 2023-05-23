@@ -6,6 +6,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.Email;
 
 @Entity
 @Table(name="supplier")
@@ -33,8 +34,7 @@ public class Supplier {
 	@Column(name = "country", length = 20)
 	private String country;
 	
-	//validation
-	//@Email
+	@Email
 	@Column(name = "email", length = 30)
 	private String email;  
 	
