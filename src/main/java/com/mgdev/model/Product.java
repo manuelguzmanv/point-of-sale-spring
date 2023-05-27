@@ -21,11 +21,11 @@ public class Product {
 	private String productName;
 	
 	@ManyToOne
-	@JoinColumn(name = "id")
+	@JoinColumn(name = "id_supplier")
 	private Supplier supplier;
 	
 	@ManyToOne
-	@JoinColumn(name = "id")
+	@JoinColumn(name = "id_category")
 	private Category category;
 	
 	@Column(name = "unit_price", length = 10)
